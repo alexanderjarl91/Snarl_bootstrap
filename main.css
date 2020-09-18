@@ -1,0 +1,22 @@
+* {
+    font-family: Pragati Narrow;
+}
+
+/* body{
+    background: #FFEBAA;
+} */
+
+.nav-item .nav-link{
+    color: black;
+    font-family: Pragati Narrow;
+    font-size: 22px;
+    margin: 0 1rem;
+}
+
+footer {
+    background-color: #FFEBAA;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+/* contact form*/
