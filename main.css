@@ -13,6 +13,8 @@
     margin: 0 1rem;
 }
 
+.nav-item a:hover { color: #FFEBAA !important; }
+
 .nav-item .active {
     color: #FFEBAA;
     font-style: bold;
