@@ -13,10 +13,20 @@
     margin: 0 1rem;
 }
 
+.nav-item .active {
+    color: #FFEBAA;
+    font-style: bold;
+}
+
+
 footer {
     background-color: #FFEBAA;
     margin: 0 auto;
     padding: 0 0;
+}
+
+.pizza {
+    margin-bottom:-80px;
 }
 
 /* contact form*/
