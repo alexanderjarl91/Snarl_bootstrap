@@ -1,0 +1,74 @@
+<section class="Material-contact-section section-padding section-dark">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Section Title -->
+            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h1 class="section-title">Má ég smakka?</h1>
+            </div>
+
+            <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+              <h5>Ég er alltaf að leita eftir nýjum hlutum til að prófa. Endilega sendu mér hugmyndir að uppskriftum til að prófa og ég hendi þeim inn á síðuna ef ég fíla þær..</p>
+              <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                
+                <!-- Name -->
+                <div class="form-group label-floating">
+                  <label class="control-label" for="name">Nafn</label>
+                  <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- email -->
+                <div class="form-group label-floating">
+                  <label class="control-label" for="email">Netfang</label>
+                  <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- Subject -->
+                <div class="form-group label-floating">
+                  <label class="control-label">Titill</label>
+                  <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <!-- Message -->
+                <div class="form-group label-floating">
+                    <label for="message" class="control-label">Uppskrift og leiðbeiningar</label>
+                    <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <!-- Form Submit -->
+                <div class="form-submit mt-5 mb-5">
+                    <button class="btn btn-warning" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Senda</button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                </div>
+              
+            </div>
+              <img class="col-md-6 img-fluid h-50" src="/images/header_img.png" alt="">
+            
+        </div>
+    </div>
+  </section>
+
+
+
+
+      <div id="error"></div>
+<form id ="form" action="/senda.html" method="GET">
+    <div>
+        <label for="name2">Name</label>
+        <input id="name2" name="name2" type="text">
+    </div>
+    <div>
+        <label for="email2">E-mail</label>
+        <input id="email2" name="email2" type="text">
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="text">
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="text">
+    </div>
+    
+    <button type="submit">Submit</button>
+</form>

@@ -12,7 +12,8 @@
 
     <title>Babies first Bootstrap </title>
     <style>@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');</style>
-  </head>
+    <script defer src="form.js"></script>
+</head>
   <body>
 
     <!-- NAVBAR -->
@@ -42,55 +43,61 @@
     </nav>
     <hr class="mt-n1">
 
-<!-- Contact Us Section -->
-<section class="Material-contact-section section-padding section-dark">
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Section Title -->
-            <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                <h1 class="section-title">Má ég smakka?</h1>
+    <section class="Material-contact-section section-padding section-dark">
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Section Title -->
+                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                    <h1 class="section-title">Má ég smakka?</h1>
+                </div>
+    
+                <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h5>Ég er alltaf að leita eftir nýjum hlutum til að prófa. Endilega sendu mér hugmyndir að uppskriftum til að prófa og 
+                      ég hendi þeim inn á síðuna ef ég fíla þær.. <br>
+                    HTML FORM VALIDATION:</p>
+                  
+                  
+                  <!-- FORM WITH HTML VALIDATION -->
+                    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                    
+                    <!-- Name -->
+                    <div class="form-group label-floating">
+                      <label class="control-label" for="name">Nafn</label>
+                      <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- email -->
+                    <div class="form-group label-floating">
+                      <label class="control-label" for="email">Netfang</label>
+                      <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group label-floating">
+                      <label class="control-label">Titill</label>
+                      <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group label-floating">
+                        <label for="message" class="control-label">Uppskrift og leiðbeiningar</label>
+                        <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Form Submit -->
+                    <div class="form-submit mt-5 mb-5">
+                        <button class="btn btn-warning" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Senda</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                  
+                </div>
+                  <img class="col-md-6 img-fluid h-50" src="/images/header_img.png" alt="">
+                
             </div>
-
-            <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
-              <h5>Ég er alltaf að leita eftir nýjum hlutum til að prófa. Endilega sendu mér hugmyndir að uppskriftum til að prófa og ég hendi þeim inn á síðuna ef ég fíla þær..</p>
-              <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                <!-- Name -->
-                <div class="form-group label-floating">
-                  <label class="control-label" for="name">Nafn</label>
-                  <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-                  <div class="help-block with-errors"></div>
-                </div>
-                <!-- email -->
-                <div class="form-group label-floating">
-                  <label class="control-label" for="email">Netfang</label>
-                  <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-                  <div class="help-block with-errors"></div>
-                </div>
-                <!-- Subject -->
-                <div class="form-group label-floating">
-                  <label class="control-label">Titill</label>
-                  <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                  <div class="help-block with-errors"></div>
-                </div>
-                <!-- Message -->
-                <div class="form-group label-floating">
-                    <label for="message" class="control-label">Uppskrift og leiðbeiningar</label>
-                    <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <!-- Form Submit -->
-                <div class="form-submit mt-5 mb-5">
-                    <button class="btn btn-warning" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Senda</button>
-                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                    <div class="clearfix"></div>
-                </div>
-              
-            </div>
-              <img class="col-md-6 img-fluid h-50" src="/images/header_img.png" alt="">
-            
         </div>
-    </div>
-  </section>
+      </section>
+
   <img class="pizza img-responsive center-block d-block mx-auto mt-1" src="images/pizza.png" alt="">
 
   <footer>
@@ -119,5 +126,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+
+</body>
 </html>
